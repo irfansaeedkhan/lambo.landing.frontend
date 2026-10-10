@@ -1,0 +1,58 @@
+.lambo-holder-container {
+    position: relative;
+    padding-top: 5rem;
+}
+.lambo-holder {
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.lambo-holder .main-para {
+    margin: 2rem 0;
+    margin-bottom: 2.5rem;
+    line-height: 28px;
+}
+
+.main-para {
+    padding-right: 5rem;
+}
+
+.para-bullets {
+    padding: 2rem;
+}
+
+.para-bullets div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.para-bullets div p {
+    width: 96.5%;
+    margin-bottom: 2.5rem;
+    line-height: 28px;
+}
+
+.para-bullets .primarybullet {
+    margin-top: 8px;
+}
+
+.para-wrap {
+    width: 96.5%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hblur-1 {
+    position: absolute;
+    top: 15%;
+    z-index: -1;
+}
+
+.hblur-2 {
+    position: absolute;
+    top: -13%;
+    z-index: -2;
+}

@@ -1,0 +1,171 @@
+.members-container {
+  position: relative;
+}
+
+.members-container .secondary-heading-white {
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.members-container .section-para {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  width: 52%;
+}
+.members {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 11rem;
+}
+.members-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.members-img img {
+  max-width: 100%;
+  /* margin: 0 auto; */
+  pointer-events: none;
+  user-select: none;
+}
+
+.mblur-1 {
+  position: absolute;
+  top: -20%;
+  z-index: -1;
+}
+.mblur-2 {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: -1;
+}
+
+/* member card */
+.memberCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 387px;
+  padding-bottom: 5rem;
+  box-sizing: border-box;
+}
+
+.memberImg {
+  width: 100%;
+  margin-top: 15rem;
+}
+.memberImg img {
+  width: 100%;
+}
+
+
+.memberDetails {
+  background: url("../../public/box.webp");
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  height: 250px;
+  bottom: -160px;
+}
+.memberContent {
+  width: max-content;
+  padding: 12% 3rem 0 3rem;
+  text-align: center;
+}
+
+.memberContent h4 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  padding-bottom: 2px;
+}
+.memberContent h5 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  padding-bottom: 2px;
+}
+.memberContent .followers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  grid-gap: 8px;
+  padding-top: 8px;
+}
+.memberContent .followers img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.memberContent .followers h6 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #4bd4de;
+}
+
+@media only screen and (max-width: 1300px) {
+  .memberContent {
+    padding: 50px 3rem 0 3rem;
+  }
+  .memberImg {
+    width: 100%;
+    margin-top: 20rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .memberContent {
+    padding: 50px 3rem 0 3rem;
+  }
+  .memberContent h4 {
+    font-size: 3.4rem;
+    line-height: 3.3rem;
+    padding-bottom: 2rem;
+  }
+  .memberContent h5 {
+    font-size: 3rem;
+    line-height: 2.7rem;
+    padding-bottom: 2rem;
+  }
+  .memberContent .followers h6 {
+    font-size: 2.6rem;
+    line-height: 2.2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .memberDetails {
+    background: url("../../public/box2.webp");
+    width: 90%;
+    height: 120px;
+    bottom: -70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .memberContent {
+    padding: 11% 3rem 0 3rem;
+  }
+  .memberContent h4 {
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 7px;
+  }
+  .memberContent h5 {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    padding-bottom: 0px;
+  }
+  .memberContent .followers h6 {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}

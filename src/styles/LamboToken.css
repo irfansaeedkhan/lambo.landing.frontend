@@ -1,0 +1,27 @@
+.lambo-token-container {
+    position: relative;
+}
+.lambo-token {
+    width: 88%;
+    margin: 8rem auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 11.5rem;
+}
+.lambo-token h2 {
+    margin: 1rem 0;
+    margin-right: auto;
+    width: 88%;
+}
+
+.lambo-token p {
+    margin-top: 1.6rem;
+    line-height: 27.5px;
+}
+
+.lambo-token-container .lblur-1 {
+    position: absolute;
+    top: 12%;
+    left: 0;
+}

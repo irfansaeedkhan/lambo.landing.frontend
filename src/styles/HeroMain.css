@@ -1,0 +1,64 @@
+.hero-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+    margin: 3rem auto;
+    /* padding-top: 2rem; */
+    overflow: hidden;
+}
+
+
+.hero-main-container .left {
+    width: 52%;
+}
+.hero-main-container .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+}
+.hero-main-container .hero-img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 25px;
+    display: block;
+}
+
+.hero-main-container .hero-eyebrow {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    opacity: 1;
+}
+
+.hero-main-container h1 {
+    font-size: 6rem;
+    margin: 0.8rem 0 2rem;
+    font-weight: bold;
+}
+
+.hero-main-container p {
+    width: 88%;
+    line-height: 26px;
+    /* letter-spacing: 1px; */
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.blur-1 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: -2;
+    width: 400px;
+    height: auto;
+}
+.blur-2 {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: -2;
+    width: 400px;
+    height: auto;
+}

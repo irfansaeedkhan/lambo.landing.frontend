@@ -1,0 +1,16 @@
+.investors {
+    width: 88%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 9rem;
+}
+
+.investors img {
+    width: auto;
+    height: auto;
+    max-height: 40px;
+    max-width: 140px;
+    object-fit: contain;
+}

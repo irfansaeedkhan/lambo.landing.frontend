@@ -1,0 +1,56 @@
+.lambo-club-container {
+    position: relative;
+}
+.lambo-club {
+    width: 88%;
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.lambo-club .left {
+    width: 50%;
+}
+
+.lambo-club .right {
+    width: 45%;
+    border: 3px dashed var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3.5rem;
+    margin-left: auto;
+    text-align: justify;
+    text-align: center;
+}
+.lambo-club .right h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.lambo-club .left p {
+    margin-top: 1.5rem;
+    line-height: 27px;
+}
+
+.lambo-club-container .blur-1 {
+    position: absolute;
+    top: -150%;
+    left: 0;
+    z-index: -1;
+}
+
+.lambo-club-container .blur-2 {
+    position: absolute;
+    top: -30%;
+    right: 0;
+    z-index: -1;
+}
+
+.lambo-club-container .club-tri {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}

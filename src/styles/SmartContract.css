@@ -1,0 +1,48 @@
+.smart-contract-container {
+    position: relative;
+}
+.smart-contract {
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 9rem;
+}
+
+.smart-contract h3 {
+    margin: 0.425rem 0;
+    font-size: 2.4rem;
+}
+
+.smart-contract-data {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1.85rem 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+.smart-contract-data  .semi-bold{
+  font-size: 2rem;
+ }
+.smart-contract-data .col div {
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.smart-contract-container .circle-1 {
+    position: absolute;
+    bottom: -130%;
+    left: 0;
+    z-index: -1;
+}
+
+.smart-contract-container .circle-2 {
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    z-index: -2;
+}

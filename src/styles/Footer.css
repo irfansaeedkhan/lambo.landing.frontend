@@ -1,0 +1,81 @@
+.footer-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 340px;
+}
+.footerInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  overflow: hidden;
+  background-color: #10242f8f;
+}
+.footer-container .pattern1 {
+  position: absolute;
+  top: -14%;
+  right: 0%;
+  z-index: -1;
+}
+.footer-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 88%;
+  margin: 4rem auto;
+  margin-bottom: 16rem;
+}
+.footer-data div,
+.footer-data ul {
+  display: flex;
+  align-items: center;
+}
+.footer-data div img {
+  margin-right: 10px;
+}
+
+.footer-data ul {
+  list-style: none;
+}
+
+.footer-data ul li {
+  margin: 0 2rem;
+}
+
+.footer-data ul li a {
+  padding: 0.25rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  border-bottom: 1px solid transparent;
+  color: #ffffff;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-data ul li a:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.footer-terms {
+  background: #1a2d37;
+  width: 100%;
+  text-align: center;
+}
+.footer-terms p {
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 2.4rem;
+  /* solid AA color on #1a2d37 (avoid opacity — App.css p { opacity: 0.8 }) */
+  color: #a8b4b9;
+  opacity: 1;
+}
+
+.footer-terms a {
+  cursor: pointer;
+}
+.footer-logo h4,
+.footer-logo .footer-brand {
+  font-weight: 700;
+  font-size: 2.1rem;
+}

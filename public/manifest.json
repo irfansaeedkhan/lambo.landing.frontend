@@ -1,0 +1,20 @@
+{
+  "name": "NFT Lambo Club",
+  "short_name": "NFT Lambo Club",
+  "icons": [
+    {
+      "src": "/logo320x320.png",
+      "sizes": "320x320",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo420x420.png",
+      "sizes": "420x420",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "theme_color": "#061117",
+  "background_color": "#061117",
+  "display": "standalone"
+}

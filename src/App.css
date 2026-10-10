@@ -1,0 +1,626 @@
+:root {
+  --primary-color: #4bd4de;
+  --base-color: #061117;
+  --red-color: #e64a6f;
+  --pink-color: #b748eb;
+  --purple-color: #604ae6;
+  --blue-color: #5093f9;
+  --lightblue-color: #4bd4de;
+}
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url("./fonts/woff2/nunito-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-display: optional;
+  src: url("./fonts/woff2/nunito-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url("./fonts/woff2/nunito-700.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  overflow: hidden;
+}
+
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  background: var(--base-color);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.base-color {
+  color: var(--base-color);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.white-color {
+  color: white;
+}
+
+.secondary-heading {
+  font-size: 4.8rem;
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.secondary-heading-white {
+  font-size: 4.8rem;
+  color: white;
+  text-align: center;
+}
+
+.section-para {
+  width: 42%;
+  margin: 0 auto;
+  margin-top: 1.35rem;
+  text-align: center;
+  line-height: 27px;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.dashed-border {
+  border: 3px dashed var(--primary-color);
+}
+
+.primarybullet {
+  display: inline-block;
+  width: 18px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 60px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 3.75px var(--primary-color);
+}
+.styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.faq-row-wrapper {
+  padding: 0 16px;
+}
+.footer-terms a {
+  color: #4bd4de;
+  text-decoration: underline;
+}
+.smart-contract-data a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.faq-container {
+  padding: 10rem 0 10rem 0 !important;
+}
+/*  media queries for landing page */
+
+@media only screen and (max-width: 1680px) {
+  .MaxWidth {
+    max-width: 1400px;
+  }
+  html {
+    font-size: 64.5%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .MaxWidth {
+    max-width: 1200px;
+  }
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .MaxWidth {
+    max-width: 1050px;
+  }
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 37.8%;
+  }
+  .links a {
+    font-size: 14px;
+  }
+  .secondary-heading {
+    font-size: 6rem !important;
+  }
+
+  .MaxWidth {
+    width: 90% !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+  }
+  .hero-main-container {
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 10rem 16px 2rem 16px !important;
+  }
+  .hero-main-container .left {
+    width: 100%;
+  }
+  .hero-main-container .left .hero-eyebrow{
+    padding-bottom: 3rem !important;
+  }
+  .hero-main-container h1 {
+    font-size: 6rem;
+    margin: 4rem 0 2rem;
+    font-weight: bold;
+  }
+  .hero-main-container .right {
+    width: 100%;
+  }
+  .hero-main-container .hero-img {
+    margin-left: 0 !important;
+    margin-bottom: 3rem;
+    padding-left: 0 !important;
+  }
+  P {
+    font-size: 2.9rem !important;
+  }
+  .hero-main-container p {
+    width: 100% !important;
+    font-size: 2.8rem !important;
+  }
+  /* invester section */
+  .investors {
+    flex-wrap: wrap;
+    gap: 3rem !important;
+    grid-gap: 2rem;
+    justify-content: center !important;
+    padding: 3rem 0 10rem 0 !important;
+  }
+  .investors img {
+    width: 28% !important;
+    max-width: 97px;
+  }
+  /* lambo club */
+  .lambo-club {
+    flex-direction: column;
+    gap: 4rem;
+    grid-gap: 4rem;
+  }
+  .lambo-club .left {
+    width: 100% !important;
+  }
+  .lambo-club .left p {
+    margin-top: 2.8rem !important;
+  }
+  .lambo-club .right {
+    width: 100% !important;
+    padding: 7rem 3.5rem !important;
+  }
+  .lambo-club .right h2 {
+    font-size: 5rem !important;
+    margin-bottom: 4.5rem !important;
+  }
+
+  .btn {
+    padding: 6px 20px !important;
+    font-size: 14px !important;
+}
+  /* lambo token */
+  .lambo-token {
+    padding-top: 10rem !important;
+  }
+  .lambo-token p {
+    margin-top: 3.6rem !important;
+    font-size: 3rem !important;
+  }
+  .lambo-token h2 {
+    width: 100% !important;
+  }
+
+  /* smart-contract */
+  .smart-contract {
+    padding-top: 10rem !important;
+  }
+  .smart-contract h3 {
+    margin: 1.225rem 0 !important;
+    font-size: 4.9rem !important;
+    text-align: center
+  }
+  .smart-contract-data {
+    flex-direction: column;
+    padding: 0.85rem 3.75rem 6rem 3.75rem !important;
+  }
+  .smart-contract-data .col div {
+    margin: 6rem 0 0px 0 !important;
+  }
+  .smart-contract-data .semi-bold {
+    color: #b9b9b9;
+    font-size: 3rem !important;
+  }
+  .smart-contract-data a {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+
+  /* lambo-holder */
+  .lambo-holder {
+    padding-top: 10rem !important;
+  }
+  .lambo-holder .main-para {
+    margin: 3rem 0 !important;
+    font-size: 2.8rem !important;
+    padding: 0 !important;
+  }
+  /* para bullets
+   */
+  .para-bullets {
+    padding: 4rem 3rem !important;
+  }
+  .para-bullets div p {
+    margin-bottom: 3.5rem !important;
+  }
+  /* .tokenomics */
+  .tokenomics {
+    padding-top: 10rem !important;
+  }
+  .secondary-heading-white {
+    font-size: 6rem !important;
+  }
+  .tokenomics .section-para {
+    width: 100% !important;
+    padding: 3rem 0 !important;
+    font-size: 2.8rem !important;
+  }
+  .token-img {
+    max-width: 100% !important;
+    margin-top: 5rem;
+  }
+
+  /* tokenomics-stats */
+  .tokenomics-stats {
+    padding-top: 0rem !important;
+    flex-direction: column;
+    padding-bottom: 8rem !important;
+  }
+  .stats-data {
+    flex-direction: column;
+    gap: 16px !important;
+    grid-gap: 16px !important;
+  }
+  .stats-data .statbox {
+    padding: 12px 16px 16px 16px;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .stats-data .statbox::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .stats-data .statbox h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  .stats-data .statbox p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  /* tokenomics-data */
+  .tokenomics-data-item {
+    padding: 3.2rem 3.2rem 5.2rem 3.2rem !important;
+    margin: 4rem 0 !important;
+  }
+  .tokenomics-data-item .blue-box {
+    font-size: 2.5rem !important;
+    color: #4bd4de;
+    margin-bottom: 3rem;
+  }
+  .tokenomics-data-item h4 {
+    margin-bottom: 4rem !important;
+  }
+  .tokenomics-data-item p {
+    font-size: 2.8rem !important;
+    line-height: 20px !important;
+  }
+  .token-item-side-img {
+    width: 6px !important;
+    height: 50px !important;
+  }
+  .tokenomics-data-item .row {
+    flex-direction: column;
+  }
+  .tokenomics-data-item .row p {
+    padding: 1rem 0;
+  }
+  .tokenomics-data-item.minedbox p {
+    margin-bottom: 3rem;
+  }
+  /* road map */
+
+  .roadmap {
+    padding-top: 10rem !important;
+  }
+  .roadmap .section-para {
+    width: 100% !important;
+    padding: 3rem 0 0 0 !important;
+    font-size: 2.8rem !important;
+    margin-bottom: 0 !important;
+  }
+  .roadmap-path {
+    padding-top: 0 !important;
+  }
+  .roadmap .tokenomics-data-item {
+    width: 100% !important;
+    height: 40rem !important;
+  }
+  .tokenomics-data-item .blue-box {
+    padding: 0.8rem 2.6rem !important;
+  }
+  .roadmap .tokenomics-data-item p {
+    text-align: left !important;
+    margin-top: 6rem !important;
+    font-size: 3rem !important;
+    line-height: 23px !important;
+  }
+
+  /* road map boxes */
+
+  .roadmap-right::after {
+    border-right: 3px solid var(--primary-color) !important;
+    height: 76px !important;
+    border-top: 0 !important;
+    z-index: -25 !important;
+    transform: translate(-50%, -100%) !important;
+  }
+  .roadmap-path .roadmap-left::after {
+    border-right: 3px solid var(--primary-color) !important;
+    height: 76px !important;
+    border-top: 0 !important;
+    z-index: -25 !important;
+    transform: translate(-50%, -100%) !important;
+  }
+  .roadmap .tokenomics-data-item .token-item-side-img {
+    display: none;
+  }
+  .roadmap .tokenomics-data-item {
+    margin: 75px 0 !important;
+  }
+  .roadmap .tokenomics-data-item::before {
+    content: "" !important;
+    position: absolute !important;
+    z-index: -20 !important;
+    background: #65f1fb !important;
+    box-shadow: 0px 4px 60px rgb(101 241 251 / 25%) !important;
+    width: 85px !important;
+    height: 10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: -11px !important;
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    box-shadow: 0px 0px 4px 1px #65f1fb8c !important;
+  }
+  /* core members */
+  .members .section-para {
+    width: 100% !important;
+    padding: 3rem 0 0 0 !important;
+    font-size: 2.8rem !important;
+  }
+  .members-img {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* faq-container */
+  .faq-container {
+    padding: 20rem 0 !important;
+  }
+  .faq-container .row-title-text {
+    line-height: 4.4rem !important;
+  }
+  .faq-container .section-para {
+    width: 100% !important;
+    padding: 3rem 0 0 0 !important;
+    font-size: 2.9rem !important;
+    text-align: center;
+  }
+  .faq-container .row-content-text {
+    font-size: 14px !important;
+  }
+  /* footer data */
+  .footer-data {
+    padding: 30px 0px 50px 0px !important;
+    flex-direction: column;
+    gap: 10rem;
+    grid-gap: 10rem;
+    max-width: 100%;
+  }
+  .footer-logo {
+    gap: 2rem;
+    grid-gap: 2rem;
+  }
+  .footer-logo h4,
+  .footer-logo .footer-brand {
+    font-size: 3.2rem !important;
+  }
+  .footer-data ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 2rem;
+    gap: 2rem;
+  }
+  .footer-data ul li {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer-data ul li a {
+    font-size: 2.8rem !important;
+  }
+  .footer-terms {
+    padding: 31px 16px !important;
+  }
+  .footer-terms p {
+    font-weight: 600 !important;
+    font-size: 10px !important;
+    /* solid AA color (rgba white 0.6 failed contrast on #1a2d37) */
+    color: #a8b4b9 !important;
+    opacity: 1 !important;
+    line-height: 18px !important;
+    text-align: center !important;
+    text-transform: capitalize;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+  .footer-terms a {
+    color: #4bd4de;
+    text-decoration: underline;
+    display: block;
+  }
+
+  /*
+   * Decorative absolute-positioned glows compete as LCP on narrow viewports
+   * (Atherum lesson: wrong LCP image kills the score). Hide them ≤1100px only.
+   */
+  .hero-main-container > .blur-1,
+  .hero-main-container > .blur-2,
+  .hero-container > .pattern-2,
+  .lambo-club-container > .blur-1,
+  .lambo-club-container > .blur-2,
+  .lambo-club-container > .club-tri,
+  .lambo-token-container > .lblur-1,
+  .lambo-holder-container > .hblur-1,
+  .lambo-holder-container > .hblur-2,
+  .smart-contract-container > .circle-1,
+  .smart-contract-container > .circle-2,
+  .members-container > .mblur-1,
+  .members-container > .mblur-2,
+  .faq-container > .mesh,
+  .footer-container > .pattern1 {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 30.8%;
+  }
+    .MaxWidth {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+  }
+  .btn {
+    padding: 13px 30px !important;
+    font-size: 3.2rem !important;
+  }
+  .hero-main-container {
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 16rem 16px 2rem 16px !important;
+    gap: 5rem;
+    grid-gap: 5rem;
+  }
+  .hero-main-container .left {
+    width: 100% !important;
+  }
+  .hero-main-container .right {
+    width: 80% !important;
+  }
+  .lambo-club {
+    flex-direction: column;
+    gap: 4rem;
+    grid-gap: 4rem;
+    padding: 10rem 16px !important;
+  }
+  .smart-contract-container , .lambo-holder-container,.tokenomics-container, .roadmap-container {
+    padding-top: 10rem !important;
+}
+
+  .roadmap .tokenomics-data-item {
+    width: 100% !important;
+    height: 53rem !important;
+  }
+  .footer-data {
+    padding: 30px 0px 50px 0px !important;
+    flex-direction: column;
+    gap: 10rem;
+    grid-gap: 10rem;
+    max-width: 340px;
+  }
+  .footer-data ul {
+    display: flex;
+    grid-gap: 5rem;
+    gap: 5rem;
+  }
+  .footer-data ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .faq-container {
+    padding: 15rem 16px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .MaxWidth {
+    max-width: 1400px;
+  }
+  html {
+    font-size: 67.5%;
+  }
+}
