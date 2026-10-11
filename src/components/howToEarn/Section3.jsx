@@ -44,7 +44,10 @@ function Section3() {
           <div>
             <span className="primarybullet"></span>
             <p>
-            If you are still not clear on what you earn, we explain it even more simply in this tutorial that you can download by <a href="#">CLICKING HERE!</a>
+            If you are still not clear on what you earn, we explain it even more simply in this tutorial that you can download by{" "}
+            <button type="button" className="text-link">
+              CLICKING HERE!
+            </button>
             </p>
           </div>
         </div>

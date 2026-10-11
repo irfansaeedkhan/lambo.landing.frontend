@@ -33,7 +33,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/"
-                className={`link ${location.pathname == "/" && "active"}`}
+                className={`link ${location.pathname === "/" ? "active" : ""}`}
               >
                 Home
               </Link>
@@ -42,14 +42,14 @@ const Footer = () => {
               <Link
                 to="/howtoearn"
                 className={`link ${
-                  location.pathname == "/howtoearn" && "active"
+                  location.pathname === "/howtoearn" ? "active" : ""
                 }`}
               >
                 How To Earn
               </Link>
             </li>
           </ul>
-          <a href="#" className="btn base-color">
+          <a href="https://app.nftlambo.club/" className="btn base-color">
             Joins us NOW!
           </a>
         </div>
@@ -57,7 +57,9 @@ const Footer = () => {
           <p>
             NFT LAMBO CLUB© 2022 • All rights reserved | Before using NFT LAMBO
             CLUB platform it is mandatory to read{" "}
-            <a href="#">Terms & Conditions</a>
+            <button type="button" className="terms-link">
+              Terms & Conditions
+            </button>
           </p>
         </div>
       </div>

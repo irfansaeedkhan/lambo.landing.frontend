@@ -51,7 +51,10 @@ const SmartContract = () => {
               <span className="semi-bold">
                 Audit:{" "}
                 <span className="primary-color bold">
-                  Download <a href="#">HERE!</a>
+                  Download{" "}
+                  <button type="button" className="text-link">
+                    HERE!
+                  </button>
                 </span>
               </span>
             </div>

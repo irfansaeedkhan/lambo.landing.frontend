@@ -71,8 +71,15 @@
   opacity: 1;
 }
 
-.footer-terms a {
+.footer-terms a,
+.footer-terms .terms-link {
   cursor: pointer;
+  color: #4bd4de;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
 }
 .footer-logo h4,
 .footer-logo .footer-brand {

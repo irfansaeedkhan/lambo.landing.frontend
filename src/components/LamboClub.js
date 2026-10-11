@@ -31,7 +31,7 @@ const LamboClub = () => {
             </span>{" "}
             What are you waiting for?"
           </h2>
-          <a href="#" className="btn">
+          <a href="https://app.nftlambo.club/" className="btn">
             Join Us NOW!
           </a>
         </div>
