@@ -190,19 +190,22 @@ $primaryColor: #4bd4de;
         .video-overlay.open {
           position: fixed;
           z-index: 1000;
-          opacity: 1;
-          position: absolute;
           inset: 0;
-          margin: auto;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
+          width: 100vw;
+          height: 100vh;
+          opacity: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0, 0, 0, 0.85);
+        }
 
-          @media (max-width: 767px) {
-              width: 75vw;
-              height: 52vw;
-          }
+        .video-overlay.open video {
+          width: min(988px, 90vw);
+          height: auto;
+          max-height: 90vh;
+          border-radius: 12px;
+          box-shadow: 5px 30px 70px -15px #111;
         }
 
         .video-overlay-close {

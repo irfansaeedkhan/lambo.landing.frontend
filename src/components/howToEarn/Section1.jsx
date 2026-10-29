@@ -1,42 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Section1 = () => {
+  const [videoOpen, setVideoOpen] = useState(false);
+
   useEffect(() => {
-    const player = document.querySelector("#play-video");
-    const videoOverlay = document.querySelector("#video-overlay");
-    if (!player || !videoOverlay) return undefined;
-
-    function close_video() {
-      videoOverlay.classList.remove("open");
-      const iframe = videoOverlay.querySelector("iframe");
-      if (iframe) iframe.remove();
-    }
-
-    function open_video(e) {
-      e.preventDefault();
-      videoOverlay.classList.add("open");
-      if (!videoOverlay.querySelector("iframe")) {
-        videoOverlay.insertAdjacentHTML(
-          "beforeend",
-          `<iframe width="988" height="556" src="https://www.youtube.com/embed/ZimIZpg0YAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-        );
-      }
-    }
-
+    if (!videoOpen) return undefined;
     function onKeyUp(e) {
-      if (e.key === "Escape") close_video();
+      if (e.key === "Escape") setVideoOpen(false);
     }
-
-    player.addEventListener("click", open_video);
-    videoOverlay.addEventListener("click", close_video);
     document.addEventListener("keyup", onKeyUp);
-
     return () => {
-      player.removeEventListener("click", open_video);
-      videoOverlay.removeEventListener("click", close_video);
       document.removeEventListener("keyup", onKeyUp);
     };
-  }, []);
+  }, [videoOpen]);
 
   return (
     <div className="Section1Container">
@@ -70,20 +46,37 @@ const Section1 = () => {
               type="button"
               className="video-play-button"
               aria-label="Play video"
+              onClick={() => setVideoOpen(true)}
             >
               <span aria-hidden="true"></span>
             </button>
           </div>
-          <div
-            id="video-overlay"
-            className="video-overlay"
-            role="dialog"
-            aria-label="Video player"
-          >
-            <button type="button" className="video-overlay-close" aria-label="Close video">
-              &times;
-            </button>
-          </div>
+          {videoOpen && (
+            <div
+              id="video-overlay"
+              className="video-overlay open"
+              role="dialog"
+              aria-label="Video player"
+              onClick={() => setVideoOpen(false)}
+            >
+              <button
+                type="button"
+                className="video-overlay-close"
+                aria-label="Close video"
+                onClick={() => setVideoOpen(false)}
+              >
+                &times;
+              </button>
+              <video
+                src="/videos/video.mp4"
+                controls
+                autoPlay
+                playsInline
+                onClick={(e) => e.stopPropagation()}
+                aria-label="How to earn video"
+              />
+            </div>
+          )}
         </div>
       </div>
       <img
