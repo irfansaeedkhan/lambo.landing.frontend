@@ -7,7 +7,7 @@ const SmartContract = () => {
       <div className="smart-contract lambo-token MaxWidth">
         <h3>Smart Contract</h3>
         <h3 className="primary-color">
-          0x8182ac1c5512eb67756a89 c40fadb2311754x4x3xx3
+          Contract address not published here in a verified form yet
         </h3>
         <div className="smart-contract-data dashed-border">
           <div className="col">
@@ -51,10 +51,7 @@ const SmartContract = () => {
               <span className="semi-bold">
                 Audit:{" "}
                 <span className="primary-color bold">
-                  Download{" "}
-                  <button type="button" className="text-link">
-                    HERE!
-                  </button>
+                  Report not published on this site yet
                 </span>
               </span>
             </div>

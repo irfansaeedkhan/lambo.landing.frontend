@@ -32,7 +32,7 @@ function Section3() {
           <div>
             <span className="primarybullet"></span>
             <p>
-            2% ONE TIME FEE on the purchases of NFTs on the fourth le
+            2% ONE TIME FEE on the purchases of NFTs on the fourth level.
             </p>
           </div>
           <div>
@@ -44,10 +44,7 @@ function Section3() {
           <div>
             <span className="primarybullet"></span>
             <p>
-            If you are still not clear on what you earn, we explain it even more simply in this tutorial that you can download by{" "}
-            <button type="button" className="text-link">
-              CLICKING HERE!
-            </button>
+            If you are still not clear on what you earn, we explain it even more simply in a tutorial, which is not available to download here yet.
             </p>
           </div>
         </div>
