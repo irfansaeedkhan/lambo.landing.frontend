@@ -33,7 +33,7 @@ const LamboClub = () => {
             What are you waiting for?"
           </h2>
           <Link to="/maintainance" className="btn">
-            Join Us NOW!
+            Join us NOW!
           </Link>
         </div>
       </div>

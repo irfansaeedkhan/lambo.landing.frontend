@@ -97,8 +97,8 @@ const FAQ = () => {
             </div>
             <p className="section-para">
                 Before you write to us check through this list, maybe the answer
-                to your Question is right here! Also attached in these answers
-                are very important Tutorials to help you with the procedures...
+                to your Question is right here! Where a guide would help, the
+                answer notes whether it is available to download here yet.
             </p>
             <Faq data={data} styles={styles} config={config} />
             <img className="mesh" src="./faq-mesh.webp" alt=""  loading="lazy" decoding="async" />
