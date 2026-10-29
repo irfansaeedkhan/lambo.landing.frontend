@@ -49,17 +49,17 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <a href="https://app.nftlambo.club/" className="btn base-color">
+          <Link to="/maintainance" className="btn base-color">
             Joins us NOW!
-          </a>
+          </Link>
         </div>
         <div className="footer-terms">
           <p>
-            NFT LAMBO CLUB© 2022 • All rights reserved | Before using NFT LAMBO
+            NFT LAMBO CLUB© 2026 • All rights reserved | Before using NFT LAMBO
             CLUB platform it is mandatory to read{" "}
-            <button type="button" className="terms-link">
+            <Link to="/terms" className="terms-link">
               Terms & Conditions
-            </button>
+            </Link>
           </p>
         </div>
       </div>

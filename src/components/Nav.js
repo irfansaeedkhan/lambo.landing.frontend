@@ -63,9 +63,9 @@ const Nav = () => {
           >
             How To Earn
           </Link>
-          <a href="https://app.nftlambo.club/" className="btn base-color">
+          <Link to="/maintainance" className="btn base-color">
             Launch App
-          </a>
+          </Link>
         </div>
       </nav>
       <div className="Navcontainer">
@@ -118,12 +118,12 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="menu-item">
-                <a
-                  href="https://app.nftlambo.club/"
+                <Link
+                  to="/maintainance"
                   className="btn base-color"
                 >
                   Launch App
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

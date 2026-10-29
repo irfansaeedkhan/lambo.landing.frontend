@@ -5,6 +5,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 
 const HowToEarn = React.lazy(() => import("./pages/HowToEarn"));
+const Terms = React.lazy(() => import("./pages/Terms"));
 const PageNotFound = React.lazy(() => import("./pages/PageNotFound"));
 const MaintainancePage = React.lazy(() => import("./pages/MaintainancePage"));
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="howtoearn" element={<HowToEarn />} />
+            <Route path="terms" element={<Terms />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
           <Route path="maintainance" element={<MaintainancePage />} />

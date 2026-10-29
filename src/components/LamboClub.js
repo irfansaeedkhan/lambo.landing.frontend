@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/LamboClub.css";
 
 const LamboClub = () => {
@@ -31,9 +32,9 @@ const LamboClub = () => {
             </span>{" "}
             What are you waiting for?"
           </h2>
-          <a href="https://app.nftlambo.club/" className="btn">
+          <Link to="/maintainance" className="btn">
             Join Us NOW!
-          </a>
+          </Link>
         </div>
       </div>
       <img
