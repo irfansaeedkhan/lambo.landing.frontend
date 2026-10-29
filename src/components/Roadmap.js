@@ -98,13 +98,13 @@ const Roadmap = () => {
         </div>
         <div className="tokenomics-data-item roadmap-right">
           <h3>
-            <span className="blue-box primary-color">2024 - 2026</span>
+            <span className="blue-box primary-color">Update pending</span>
           </h3>
           <p>
-            Before the end of 2023 the new Roadmap will be released
-            with the goals we will achieve by 2026! We anticipate that 2024 will
-            be the hottest phase of the project because the NFT Lambo Club
-            family rallies will also begin!
+            The roadmap published here ends in 2023. A new roadmap has not
+            been published yet, so no goals or dates beyond 2023 are shown
+            here. This card will be replaced once the project team publishes
+            the new roadmap.
           </p>
           <img
             className="token-item-side-img"
