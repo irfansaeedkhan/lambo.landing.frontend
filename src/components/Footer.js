@@ -55,8 +55,9 @@ const Footer = () => {
         </div>
         <div className="footer-terms">
           <p>
-            NFT LAMBO CLUB© 2026 • All rights reserved | Terms & Conditions
-            are not published yet.
+            NFT LAMBO CLUB© 2026 • All rights reserved |{" "}
+            <Link to="/terms">Terms & Conditions</Link> are not published
+            yet.
           </p>
         </div>
       </div>
