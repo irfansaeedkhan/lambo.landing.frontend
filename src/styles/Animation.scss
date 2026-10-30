@@ -14,7 +14,12 @@ body {
   overflow: hidden;
 }
 .introContainer {
-  position: absolute;
+  /* Fixed, not absolute: absolute pins the dark background to the top of
+     the document (the header), so on a refresh while scrolled down the
+     page the bull animation (already fixed) drew over page content with
+     no background behind it. Fixed keeps the background over the whole
+     viewport wherever the page is scrolled. */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
